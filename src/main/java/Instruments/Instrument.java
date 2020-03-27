@@ -54,12 +54,11 @@ public abstract class Instrument implements ISell, IPlay {
 
     //methods
 
-    public String calculateMarkup(){
-        double sellPriceMinusBuyPrice=this.getSellCost()-this.getPurchasedCost();
-        double midPrice=sellPriceMinusBuyPrice/getPurchasedCost();
-        double markUp=midPrice*100;
-        markUp=Math.round(markUp);
-        String markUpAsString=markUp+"%";
-        return markUpAsString;
+    public double calculateMarkup(){
+        double markUp=this.getSellCost()-this.getPurchasedCost();
+//        double midPrice=sellPriceMinusBuyPrice/getPurchasedCost();
+//        double markUp=midPrice*100;
+//        markUp=Math.round(markUp);
+        return markUp;
     }
 }

@@ -54,7 +54,7 @@ public class TrumpetTest {
 
     @Test
     public void canGetMarkup(){
-        assertEquals("100.0%",getzen.calculateMarkup());
+        assertEquals(300,getzen.calculateMarkup(),0.1);
     }
 
 }

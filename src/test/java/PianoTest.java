@@ -54,7 +54,7 @@ public class PianoTest {
 
     @Test
     public void canGetMarkup(){
-        assertEquals("150.0%",steinway.calculateMarkup());
+        assertEquals(3000,steinway.calculateMarkup(),0.1);
     }
 
 }

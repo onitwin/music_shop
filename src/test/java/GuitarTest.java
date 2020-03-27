@@ -52,7 +52,7 @@ public class GuitarTest {
 
     @Test
     public void canGetMarkup(){
-        assertEquals("33.0%",fender.calculateMarkup());
+        assertEquals(100,fender.calculateMarkup(),0.1);
     }
 
 }
